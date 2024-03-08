@@ -3,7 +3,7 @@ if SERVER then
 	util.AddNetworkString("prefchat-server")
 	util.AddNetworkString("prefchat-client")
 
-	local groups = {"superadmin", "admin"} -- player groups that can see synchat
+	local groups = {"superadmin", "admin"} -- player groups that can see prefchat
 	local customPrefix = "." -- this is the trigger char for messaging with custom chat in chatbox.
 
 	hook.Add( "PlayerSay", "prefchat-hook", function( ply, text )
