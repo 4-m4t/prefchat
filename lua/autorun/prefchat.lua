@@ -29,14 +29,13 @@ if SERVER then
 	end )
 
 else
-
+	
 	net.Receive("prefchat-client", function (len, ply)
 
 		local text = net.ReadString()
 		local name = net.ReadString()
 
 		chat.AddText( Color( 64, 222, 250), '[prefchat]', Color( 64, 222, 250), name .. ': ' , Color( 46, 255, 80), text ) -- adding received message to selected players' chat
-		
 	end)
 
 end
