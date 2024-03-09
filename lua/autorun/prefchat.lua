@@ -8,7 +8,7 @@ if SERVER then
 
 	hook.Add( "PlayerSay", "prefchat-hook", function( ply, text )
 
-		if ( string.StartWith( string.lower( text ), "." ) ) then
+		if ( string.StartWith( string.lower( text ), customPrefix ) ) then
 
 			if !table.HasValue(groups, ply:GetUserGroup()) then return end -- checking if groups table has a player's group.
 
